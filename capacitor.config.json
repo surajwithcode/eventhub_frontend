@@ -1,0 +1,5 @@
+{
+  "appId": "com.eventhub.app",
+  "appName": "EventHub",
+  "webDir": "dist"
+}
