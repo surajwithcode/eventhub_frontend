@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         {/* PUBLIC ROUTE - LOGIN & REGISTER */}
         <Route path="/" element={<RegisterAndLogin />} />
-        
+
         {/* CUSTOMER PROTECTED ROUTE */}
         <Route path="/customer-dashboard" element={
           <RoleBasedRoute allowedRoles={['customer']}>
@@ -33,11 +33,11 @@ export default function App() {
         {/* ADMIN PROTECTED ROUTE */}
         <Route path="/admin-dashboard" element={
           <RoleBasedRoute allowedRoles={['admin']}>
-            <AdminDashboard 
-              brandConfig={brandConfig} 
-              setBrandConfig={setBrandConfig} 
-              productsList={productsList} 
-              setProductsList={setProductsList} 
+            <AdminDashboard
+              brandConfig={brandConfig}
+              setBrandConfig={setBrandConfig}
+              productsList={productsList}
+              setProductsList={setProductsList}
             />
           </RoleBasedRoute>
         } />
